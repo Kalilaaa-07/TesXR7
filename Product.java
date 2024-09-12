@@ -4,12 +4,26 @@ public class Product {
     protected int number;
     protected String name;
     protected int quantity;
-    protected double prince;
+    protected double price;
 
-    public Product () {
+    public Product() {
         number = 0;
         name = "Product 0";
         quantity = 0;
-        prince = 0.0;
+        price = 0.0;
+    }
+
+    public Product(int number, String name, int quantity, double price) {
+        this.number = number;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
+    public void print() {
+        System.out.println("Number: " + number);
+        System.out.println("Name: " + name);
+        System.out.println("Quantyti: " + quantity);
+        System.out.println("Price: " + price);
     }
 }
